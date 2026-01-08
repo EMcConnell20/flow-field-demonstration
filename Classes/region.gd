@@ -105,7 +105,7 @@ func set_flow(at: Vector2i, flow_position: Vector2i, length: float) -> void:
 
 ## Returns whether the tile at the given position is a wall.
 func tile_is_wall(at: Vector2i) -> bool:
-	return get_cell_atlas_coords(at) == WALL_ATLAS_ID;
+	return get_cell_atlas_coords(at) != FLOOR_ATLAS_ID;
 
 ## Returns the flow position of the specified tile.
 func tile_flow(at: Vector2i) -> Vector2i:
